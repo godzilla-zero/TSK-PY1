@@ -3,9 +3,9 @@ OUTPUT_FILE = "output.csv"
 
 def to_csv_file(filename, headers, rows, delimiter=",", new_line="\n"):  # TODO реализовать функцию to_csv_file
     with open(filename, "w") as f:
-        f.write(delimiter.join(headers) + new_line)  # вписываем в файл заголовки
+        f.write(delimiter.join(headers) + new_line)  
         for row in rows:
-            f.write(delimiter.join(row) + new_line)  # вписываем в файл строки
+            f.write(delimiter.join(row) + new_line)  
 
 
 headers_list = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'median_house_value']
